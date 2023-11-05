@@ -1,0 +1,2 @@
+- Collect IOCs from two samples files and generate two IOC fiels in Mandiant IOC editor 
+- Use the IOC file to audit a complete system using Mandiant Redline. 
