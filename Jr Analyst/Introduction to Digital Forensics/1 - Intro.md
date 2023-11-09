@@ -66,12 +66,12 @@ Cellebrite is a suite of tools designed primarily for mobile forensics, which al
 #Evidence Analysis
 
 ### Autopsy
-An autopsy is an open-source digital forensics tool that helps investigators analyze and extract evidence from various data sources, such as hard drives and mobile devices. It works by creating a forensic image of the target storage media and then running in-depth searches to quickly retrieve key information, such as recently used programs, deleted files emails, visited websites, and much more. 
+An autopsy is an open-source digital forensics tool that helps investigators analyze and extract evidence from various data sources, such as hard drives and mobile devices. It works by creating a forensic image of the target storage media and then running in-depth searches to quickly retrieve key information, such as recently used programs, deleted files, emails, visited websites, and much more. 
 
 ### Volatility
-Volatility is a Python-based memory forensics framework that enables the analysis of memory dumps or memory images. It captures a snapshot of a computer's memory, allowing users to search for valuable information. This data aids in undersntanding the computer's past activities and uncovering potential evidence of malicious actions
+Volatility is a Python-based memory forensics framework that enables the analysis of memory dumps or memory images. It captures a snapshot of a computer's memory, allowing users to search for valuable information. This data aids in understanding the computer's past activities and uncovering potential evidence of malicious actions.
 
-Volatility's versatility extends to analyzing memory from various operating systems, including Windows, Linux, and Mac OS, making it suitable for a wide range of scenarios, Moreover, it can recover deleted files that might be inaccessible through other means, enhancing its utility. 
+Volatility's versatility extends to analyzing memory from various operating systems, including Windows, Linux, and Mac OS, making it suitable for a wide range of scenarios. Moreover, it can recover deleted files that might be inaccessible through other means, enhancing its utility. 
 
 
 
