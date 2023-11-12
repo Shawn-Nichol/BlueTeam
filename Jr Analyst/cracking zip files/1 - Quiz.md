@@ -9,10 +9,10 @@ Answer: a1b3c5
 
 # Question
 What is the working password to unlock DictionaryAttack.zip?
-
+```
 ┌──(kali㉿kali)-[~/Downloads/SBT_ZIP_Cracking]
 └─$ fcrackzip -D -u -p /usr/share/wordlists/rockyou.txt DictionaryAttack.zip
-
+```
 
 PASSWORD FOUND!!!!: pw == FRIENDSHIPSTARS
 
