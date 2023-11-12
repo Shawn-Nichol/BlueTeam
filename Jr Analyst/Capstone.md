@@ -99,14 +99,34 @@ this is a test
 ```
 mv 'desk stock'* desk.jpg
 ```
-I'll need a password to pull any data from here.
+Using the password obtained from the Emails folder and steghide I was able to extract a password list from the laptop image.
+```
+──(kali㉿kali)-[~/Downloads/J Harrison Disk Image 10.09.2019/Images]
+└─$ steghide extract -sf laptop*              
+Enter passphrase: 
+wrote extracted data to "passwords".
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Downloads/J Harrison Disk Image 10.09.2019/Images]
+└─$ strings passwords           
+{2/4}
+a123456
+vincent
+Usuckballz1
+spooky
 
+```
 
 # Payslips
 A readme saying pay slips should emailed to personal address
 
 # Saved Emails
-Files are as they say; there is only one email, but there doesn't appear to be much in there. 
+Email file appears to be normal, reading the Form1.jpg file with strings command we can see an some critical information being shared. 
+```
+Simon, I have usernames and passwords for the VPN. Still on my work PC. Don't want to risk emailing them just yet. When I do, the file is a .jpg image + password for extraction is 
+password
+. Use steghide. Talk again soon
+
+```
 
 
 # Weekly Meeting
