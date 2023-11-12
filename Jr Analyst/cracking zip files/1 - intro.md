@@ -34,9 +34,12 @@ Brutefore attack
 - -b - Selecting the option for a brute-force attack
 - BrutForceAttack.zip, the file we want to brute-force
 - -u - This makes sure fcrackzip actually tries to unzip the file; without this, we won't actually get the right password
-- -c - this is where we pick the characters we want to use in our dictionary attack. ex a respresent lowercase letters, and 1 represents numbers 0-9
+- -c - this is where we pick the characters we want to use in our dictionary attack. ex a represent lowercase letters, and 1 represents numbers 0-9
 - -l - This where we state the length of the password we want to crack. 
 
+```
+fcrackzip -b BruteForceAttack.zip -u -c a1 -l 4
+```
 
 Cheat sheet
 (https://manpages.ubuntu.com/manpages/trusty/man1/fcrackzip.1.html)https://manpages.ubuntu.com/manpages/trusty/man1/fcrackzip.1.html
