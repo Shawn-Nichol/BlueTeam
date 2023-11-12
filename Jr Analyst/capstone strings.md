@@ -7,6 +7,21 @@ Could this be one
 Note to self, stop leaving payslips on my work PC. Just email them to personal address and print off at home
 
 ```
+# String 2
+```
+──(kali㉿kali)-[~/Downloads/J Harrison Disk Image 10.09.2019/Images]
+└─$ steghide extract -sf laptop*              
+Enter passphrase: 
+wrote extracted data to "passwords".
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Downloads/J Harrison Disk Image 10.09.2019/Images]
+└─$ strings passwords           
+{2/4}
+a123456
+vincent
+Usuckballz1
+spooky
+```
 
 
 # String 3
