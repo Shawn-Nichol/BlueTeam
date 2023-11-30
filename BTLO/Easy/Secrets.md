@@ -38,5 +38,7 @@ Header, Payload, Signature
 # Question 3
 
 # Question 4
+Use hashcat to decode the JWT not sure exactly how this works yet. I may need to rm the file and start over. 
+
 
 # Question 5
