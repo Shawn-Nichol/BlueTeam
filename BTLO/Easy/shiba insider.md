@@ -15,10 +15,7 @@ Unlock file.zip
 Shiba Dog has everything you need and decided that no more passwords will be needed 
 
 
-## ssdog1.jpeg
-exiftool shows a couple of intereseting lines. 
 
-![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/3cbf8d09-bc67-4fc5-bffa-cebba17c54a4)
 
 ## Insider.pcap
 Wireshark stream results
@@ -28,20 +25,38 @@ Wireshark stream results
 
 There is a base64 encoded message "ZmFrZWJsdWU6cmVkZm9yZXZlcg==" which reads "fakeblue:redforever"
 
+## ssdog1.jpeg
+exiftool shows a couple of interesting lines. 
 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/3cbf8d09-bc67-4fc5-bffa-cebba17c54a4)
 
+After trying a couple of passwords, I recalled the README.txt file that said there were no passwords and ran steghide without entering a password to extract a new file "idInsider.txt"
 
+## Insider
+0726ba878ea47de571777a
 
 # Question 1
+use your own password
 
 # Question 2
+redforever
+
 # Question 3
 No
 
 # Question 4
+Exiftool
+
 # Question 5
+Technique:Steganography
+
 # Question 6
+Steghide
+
 # Question 7
+0726ba878ea47de571777a
+
 # Question 8
-# Question 9 
-# Question 10
+
+
+
