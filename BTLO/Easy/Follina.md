@@ -1,10 +1,14 @@
 Note this challenge includes live malware; I've created a dirty VM on my virtual box and have disabled network access and copy on the VM.
 
 OSINT
-https://owasp.org/www-community/vulnerabilities/follina
-https://www.reversinglabs.com/blog/threat-analysis-follina-exploit-powers-live-off-the-land-attacks
-https://www.reversinglabs.com/blog/threat-analysis-follina-exploit-powers-live-off-the-land-attacks
+https://owasp.org/www-community/vulnerabilities/follina </br> 
+https://www.reversinglabs.com/blog/threat-analysis-follina-exploit-powers-live-off-the-land-attacks  </br>
+https://www.reversinglabs.com/blog/threat-analysis-follina-exploit-powers-live-off-the-land-attacks </br>
 
+## Description
+The Follina vulnerability represents a significant risk within Microsoft Office products. It enables remote code execution (RCE) attacks, demanding immediate attention as Microsoft has released security updates to address it. 
+
+The vulnerability (CVE-2022-30190) affects the Microsoft Support Diagnostic Tool, a standard component of the company’s Windows operating system.
 
 # Question 1
 Run SHA1 against sample.doc
