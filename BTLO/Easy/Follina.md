@@ -3,7 +3,7 @@ Note this challenge includes live malware; I've created a dirty VM on my virtual
 OSINT
 https://owasp.org/www-community/vulnerabilities/follina
 https://www.reversinglabs.com/blog/threat-analysis-follina-exploit-powers-live-off-the-land-attacks
-
+https://www.reversinglabs.com/blog/threat-analysis-follina-exploit-powers-live-off-the-land-attacks
 
 
 # Question 1
@@ -38,6 +38,27 @@ https://www.huntress.com/blog/microsoft-office-remote-code-execution-follina-msd
 4096
 
 # Question 5
+
+
+# Question 6
+ This information is available on the huntress blog
+ 
+ msdt.exe
+
+# Question 7
+Event ID 4688 corresponds to a new process being created. 
+ProcessName: Refers to the name of the newly created process. 
+ParentProcessName: Refers to the name of the parent process that initiated the creation of the new process.
+
+(ProcessName, ParentProcessName)
+msdt.exe, WINWORD.exe
+
+# Question 8
+In virus total, go to the MITRE ATT&CK Tactics and Techniques. Click on the execution ID to navigate to the MITRE web page. 
+
+T1059 matches the description of the malware on VirusTotal. 
+
+T1059
 
 # Question 9
 This can be found on multiple sites. 
