@@ -1,4 +1,4 @@
-Note this challenge includes live malware; I've created a dirty VM on my virtual box and have disabled network access and copy on the VM.
+Note this challenge includes live malware; I've created a dirty VM on my virtual box and have disabled network access and copy on the VM. The "any.run" website now requires a company email to register to prevent me from utilizing the tool; I was able to identify all the information need by utlizing native Kali tools and OSINT. 
 
 OSINT
 https://owasp.org/www-community/vulnerabilities/follina </br> 
