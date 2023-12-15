@@ -23,9 +23,9 @@ Now scroll down until you find the value 4
 Create_Suspended
 
 # Question 3
-After some extensive search through the document, I noticed the PowerShell command was lower in Function 00401000, and that it was using base 64. Out of curiosity, I decoded this message, thinking it might be a clue to a later question. 
+After some extensive search through the document, I noticed the PowerShell command was lower in Function 00401000, and that it was using base 64. Out of curiosity, I decoded this message, thinking it might be a clue to a later question. </br>
 
-![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/b6f9a4a3-9ea8-425d-ba90-2162dc1e3235)
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/b6f9a4a3-9ea8-425d-ba90-2162dc1e3235) </br>
 
 somec2.server
 
@@ -52,9 +52,19 @@ Near the very bottom of the function, there are three Thread APIs. The question 
 SetThreadContext, ResumeThread
 
 # Question 7
-Based on the name of the challenge and the information obtained throughout the challenge, we know it will be some sort of Process Injection. There are 15 options to choose from, T1055.
+Based on the name of the challenge and the information obtained throughout the challenge, we know it will be some sort of Process Injection So I googled MITRE Process Injection. </br>
+
+https://attack.mitre.org/techniques/T1055/
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/be4aedc8-91df-4260-86c2-0f4d3e14fb19)
+
+There are 15 options to choose from, T1055.
 - 001. talks about injecting DLL  libraries into the process, this doesn't sound like what we're looking for.
-- 002. Portable Executable injection, sounds pretty good along with WriteProcessMemory, then invoke CreateRemoteThread sounds like a winner to me. 
+- 002. Portable Executable injection, sounds pretty good along with WriteProcessMemory, then invoke CreateRemoteThread sounds like a winner to me. </br>
+  
+https://attack.mitre.org/techniques/T1055/002/
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/2353064b-dead-401b-8fdd-0becfc8e602f)
+
+
 
 
 
