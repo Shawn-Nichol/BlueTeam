@@ -1,4 +1,4 @@
-I'm using Ghidra to perform static analysis on the executable. 
+I'm using Ghidra to perform static analysis on the executable. To me, this was a complex challenge maybe because I've never used Gihrad before. 
 
 # Question 1
 Because this process starts early, I started going through the Decompiled first function 00401000, and found an API CreateProcessA, that is starting Notepad.exe. 
