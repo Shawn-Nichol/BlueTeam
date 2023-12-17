@@ -1,4 +1,4 @@
-This challenge gives you sysmon log file that can be analyzed with NotePad++. 
+This challenge gives you a sysmon log file that can be analyzed with NotePad++ and Linux CLI. 
 
 # Question 1
 
@@ -8,10 +8,10 @@ Using Linux CLI, I used CAT and GREP to search through the sysmon log file. Not 
 cat sysmon* | grep "key" | sort | uniq
 ```
 Keys tried
-- OrignalFileName: I returned several binaries, all of which were legitimate.
+- OriginalFileName: I returned several binaries, all of which were legitimate.
 - ParentCommandLine: There were some potentially suspicious files; googling these file names didn't return anything suspicious. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/1de81b99-ff0b-469b-b885-42b34446bc00)
-- TargetFileName: It returned too many results, so I ignored this one.
+- TargetFileName: Returned a lot of DLL, and don't think this is what we are after
 - DestinationIp: Return one unique result. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/17ef5d0a-af73-44b7-ab24-008445d7f825)
 
@@ -45,11 +45,46 @@ The first result was the clue I was looking for, as it contained a set command a
 comspec=C:\\windows\\temp\\supply.exe"
 
 # Question 4
+What is a LOLBIN
+
+LOLBIN stands for "Living Off the Land Binaries." These are legitimate, built-in executable files or binaries within an operating system that attackers leverage to carry out malicious activities. The term emphasizes using these trusted and often overlooked system binaries for nefarious purposes.
+
+Use the "CTRL+F" to find events that contain "comspec=C:\\windows\\temp\\supply.exe", this will return two results. The two events have an OrignalFileNames of CMD.exe of FTP.exe. Note that "comspec" is in the ParentComandLine of the second event; this indicates that the second event called the LOLBIN. 
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/c448c4ee-7e38-4cf6-85f4-b462939b7a00)
 
 
+ftp.exe
 # Question 5
+Start looking for events that ran after 2021-05-07 12:22:39.500 that contain supply.exe
+
+This is the first event that contains supply.exe that runs after the time that includes a command. </br>
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/04a0cf38-b9be-4a9c-81da-21867fece083)
+
+
+
+ipconfig
 # Question 6
+Earlier, I used the key TargetFilename, which returned a lot of dll, one that I thought was odd was python27.dll
+
+python
 # Question 7
+We know that Invoke-WebRequest was used to pull files, so the list starts looking for these events. 
+```
+cat sysmon* | grep -i "Invoke-WebRequest" | sort | uniq
+```
+Note: you need to use the -i flag so the search isn't case-sensitive. </br>
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/31f09920-f0d9-4c90-a454-fab03546f5b9)
+
+https://github.com/ohpe/juicy-potato/releases/download/v0.1/JuicyPotato.exe
+
 # Question 8
-# Question 9
-# Question 10
+Now that we have the application the attacker is using, "juicy.exe" (The application name was obtained from the Outfile of the Invoke-WebRequest). We can parse the sysmon log for that information. 
+
+```
+cat sysmon* | grep "juicy.exe" | sort | uniq
+```
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/61c5d098-b5b8-4dc1-9dfe-bd95c1112f60)
+
+9898
