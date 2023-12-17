@@ -32,11 +32,21 @@ There are a couple of results, most of which have encrypted data, but those can 
 Invoke-Webrequest, 6969
 
 # Question 3
-My First thought is the ZoneId=3 would be the answer here. 
+My first thought is that the ZoneId=3 would be the answer here. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/347ff1e0-0b6c-47ee-8fb4-c7687e68c904)
 
+Next, I started combing through the log and used "CRTL+F" to identify any events containing IP address 192.168.1.11. After reading a few of the responses, I realized there were over 300 matches, which would take too long. This is when it dawned on me that variables are typically set with an = sign, So I used the following Linux command
+```
+cat sysmon* | grep "=" | sort | uniq
+```
+The first result was the clue I was looking for, as it contained a set command and looked like it was applying a variable. </br> 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/02d7dc58-f677-4e82-b3d8-ce6708052446)
+
+comspec=C:\\windows\\temp\\supply.exe"
 
 # Question 4
+
+
 # Question 5
 # Question 6
 # Question 7
