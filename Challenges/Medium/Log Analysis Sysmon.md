@@ -1,27 +1,41 @@
-This challanges gives you JSON file that can be analysis with NotePad++. 
+This challenge gives you sysmon log file that can be analyzed with NotePad++. 
 
 # Question 1
 
-Using Linux CLI, I used CAT and GREP to search through the sysmon log file. Not knowing where to start i started prefoming searchs on keys from the JSON file. 
+Using Linux CLI, I used CAT and GREP to search through the sysmon log file. Not knowing where to start I started performing searches on keys of key/pairs from the sysmon file. 
 
 ```
 cat sysmon* | grep "key" | sort | uniq
 ```
 Keys tried
-- OrignalFileName: retuned several binaries, all of which ended up being legitmate.
-- ParentCommandLine: Had some potentaill supicous files, googling these file names didn't return anything supcious. 
+- OrignalFileName: I returned several binaries, all of which were legitimate.
+- ParentCommandLine: There were some potentially suspicious files; googling these file names didn't return anything suspicious. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/1de81b99-ff0b-469b-b885-42b34446bc00)
-- TargetFileName: returned to many restult, so I ignored this one.
-- DestinationIp: Return one unique result. 
+- TargetFileName: It returned too many results, so I ignored this one.
+- DestinationIp: Return one unique result. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/17ef5d0a-af73-44b7-ab24-008445d7f825)
 
-I searched for the sysmon log file for the IP address, there are 395 results but looking at the first result we can see an IP address with an unusal port. 
+I searched for the sysmon log file for the IP address. There are 395 results, but looking at the first result, we can see an IP address with an unusual port. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/3f000c95-e22f-4a2f-911a-9b2cafd26efd)
 
-
+updater.hta
 
 # Question 2
+Use the same command to return results for Powershell
+```
+cat sysmon* | grep "powershell" | sort | uniq
+```
+There are a couple of results, most of which have encrypted data, but those can be ignored. 
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/0559490e-313b-4c12-8ec0-3ef08d84de64)
+
+Invoke-Webrequest, 6969
+
 # Question 3
+My First thought is the ZoneId=3 would be the answer here. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/347ff1e0-0b6c-47ee-8fb4-c7687e68c904)
+
+
 # Question 4
 # Question 5
 # Question 6
