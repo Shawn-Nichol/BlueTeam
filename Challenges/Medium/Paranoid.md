@@ -9,7 +9,7 @@ aureport -if audit.log --auth
 
 btlo
 # Question 2
-You can see multiple attempts to try and gain access to the system, so this looks like a brute force or a dictionary attack.
+You can see multiple attempts to access the system, so this looks like a brute force or a dictionary attack.
 Brute Force
 # Question 3
 You'll see the IP address pop up multiple times in the previous search query. 
@@ -17,7 +17,7 @@ You'll see the IP address pop up multiple times in the previous search query.
 192.168.4.155 
 
 # Question 4
-Use the tty command to view key strokes. 
+Use the tty command to view keystrokes. 
 
 ```
 aureport -if audit.log --tty
@@ -28,7 +28,7 @@ aureport -if audit.log --tty
 linpease
 
 # Question 5
-Looking at the result from the previous question you can see another command called evil.tar.gz that was entered. When filtering the log you can identify the PID that is associated with evil. 
+Looking at the result from the previous question, you can see another command called evil.tar.gz that was entered. When filtering the log, you can identify the PID that is associated with evil. 
 
 ```
 aureport -if audit.log --tty
@@ -45,7 +45,16 @@ https://blog.aquasec.com/cve-2021-3156-sudo-vulnerability-allows-root-privileges
 CVE-2021-3156 
 
 # Question 7
+Google CVE-2-21-3156, and NIST will describe the CVE. 
 
+heap-based buffer overflow
 
 # Question 8
+Using the TTY flag that was used earlier, we can review the key commands after the last "whoami" and will see a cat command was entered to view a file before exiting. 
+```
+aureport -if audit.log --tty
+```
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/62ac9d13-c36e-472a-a991-ce72ffe0a9cb)
+
 
