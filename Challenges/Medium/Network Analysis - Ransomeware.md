@@ -21,7 +21,10 @@ http://10.0.2.15:8000/safecrypt.exe
 # Question 5
 
 # Question 6
+The encryption type can be found in multiple places, the easiest one for me was the PNG file. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/d6d301ad-2780-40ac-991e-6e20e892075a)
 
+RSA-4096
 # Question 7
 
 # Question 8
