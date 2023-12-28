@@ -45,3 +45,6 @@ A network bridge device connects separate networks to make them into one larger 
 
 
 # Network Tools. 
+Well-known ports range from 0 to 1023. 
+Registered ports 1024 to 49151
+Private ports 49152 to 65535 are typically used for ephemeral ports, which is the name given to the source port used by a client in server-client communication. 
