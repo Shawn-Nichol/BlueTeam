@@ -96,3 +96,34 @@ Typically phishing emails will contain either a malicious URL or Attachment; spe
 
 **Security Awareness Training**
 Security awareness training should be a mandatory program that new employees must complete by a set time. 
+
+
+## AAA Control Methods
+Authentication, Authorization, and Accountability: This security principle allows us to ensure that only allowed individuals are permitted access to IT resources to limit the impact of certain access-based cyber-attacks, such as account compromises. 
+
+**Authentication**
+This involves using some form of verification to confirm that the identity is correct. There are three different types of authentication. 
+- Something you know:
+also known as authentication by knowledge, is proving your identity using something that you can remember, such as a PIN code when using your bank card, a password when logging into a system, or a security question answer such as your pet's first name.
+This is the easiest to implement. However, it is not secure, as passwords can be stolen. 
+
+- Something you have
+authentication by ownership proving your identity with a physical item that you have with you, such as an ID pass that uses RFID/RFC technology to let you through locked doors at work or even a set of keys to get into your house or car.
+
+Keys can be stolen, so having a set of keys for a house doesn't actually prove that you own the house. THis is why you need a combination of AAA to have secure access controls. 
+
+- Something you are
+authentication by characteristic is one of the hardest controls to bypass because it is directly associated with an individual. This could be fingerprints, retinal scans, or face identification. 
+
+To ensure strong authentication, it is recommended to use a combination of 2 of the three controls. 
+
+**Authroization**
+What is the authenticated user permitted to do? Using the principle of least privilege, we want to give individuals only the access they require to complete their jobs and nothing more. If we gave everyone unlimited access, if their account is compromised, then the attacker will have all of that access, too; by reducing employee access, we can restrict the access an attacker or insider threat could gain and abuse. 
+
+**Accountability**
+is the process of being able to identify what has happened and when which can be used as evidence during a security event or incident. 
+
+Accountability helps to validate what happened, by whom and in some cases, can help uncover if this was the individual or if someone else used this identity to conduct malicious actions. 
+
+**Conclusion**
+By implementing AAA controls, an organization can restrict access to only known individuals and monitor their actions in case they need to be reviewed. 
