@@ -15,6 +15,31 @@ Deterrents are designed to deter people.
 
 # Network Security Controls (Firewalls, NIPS, NIDS, SIEM, NAC)
 
+**Network Intrusion Detection**
+NIDs come in the form of software or physical devices that monitor network traffic in order to generate alerts for human analysts to investigate. 
+
+- Inline: The system running the NIDS software is sitting directly in the path of network traffic; in this  case, the system will, by definition, become a NIPS, as it can perform defensive measures such as blocking or resetting connections.
+
+- Network Tap: NIDS will be connected to the network by tapping into a physical connection, such as a cable.
+
+- Passive: The NIDS is connected to a SPAN port on a network device. This physical port allows all traffic passing through the device to be mirrored to the SPAN port, so the NIDS will get a copy of all network activity. 
+
+The purpose of NIDS is purely to generate alerts so that human analysts can investigate and take action if needed. 
+
+**Network Intrusion Prevention**
+NIPS are able to automatically take defensive actions based on the activity that has been identified. NIDS can detect activity and generate an alert, but NIPS can detect activity and take action. 
+
+**Log Monitoring**
+Web Proxy logs:  This device processes web-based requests to the internet and will contain a list of sites visited by employees. 
+
+Perimeter FIrewalls: If a malicious actor starts port scanning the organization, the perimeter firewalls will pick this activity up first as they get smashed with a request from the scanning IP. 
+
+**Network Access Control**
+NAC can work to prevent rogue or non-compliant devices from connecting to a private network. Security teams could require that any device connecting to the network needs the latest patches and security updates and must be running anti-virus. NAC can enforce this and not let devices connect to the network until they have met all requirements. 
+
+
+
+
 # Endpoint Security Controls (HIPS, HIDS, EDR, Anti-Virus, SIEM)
 
 **Host Intrusion Detection**
