@@ -20,7 +20,7 @@ Risk assessments should be dynamic to be effective; they should be periodically 
 **Risk Reduction**
 Risk can be reduced by applying mitigating controls, such as firewalls in front of an internet-facing website. 
 
-**Risk Avoidcane**
+**Risk Avoidance**
 Risk can be completely removed by not engaging in a certain activity, such as not allowing employee-owned devices on corporate networks. 
 
 **Risk Transfer**
@@ -70,3 +70,7 @@ HIPAA:
 https://www.tcdi.com/information-security-compliance-hipaa/
 https://www.cdc.gov/phlp/publications/topic/hipaa.html
 https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity/index.html
+
+
+
+# Change and Patch management
