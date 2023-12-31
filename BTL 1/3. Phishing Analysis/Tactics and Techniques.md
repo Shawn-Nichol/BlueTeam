@@ -1,27 +1,27 @@
 # Spear phishing
-Whem malicious actors gather information about their target to make their emails more effective. Tailoring an email to specific target makes the message more convincing. 
+When malicious actors gather information about their target to make their emails more effective. Tailoring an email to a specific target makes the message more convincing. 
 
 
 
 
 # Impersonating
-The act of pretending to be someone else. This can be used tto tick malicious actors to trick their target into thinking they are someone they know, making them more likley to interact. 
+The act of pretending to be someone else. This can be used to tick malicious actors to trick their target into thinking they are someone they know, making them more likely to interact. 
 
 # Typo Squatting
-Typo squatting is the acto fo impersonating a brand or domain name by misspelling it, such as missing letters or including additional ones. 
+Typo squatting is the act of impersonating a brand or domain name by misspelling it, such as missing letters or including additional ones. 
 
-Large organizations may chooose to generate a list of similarly named domins, and either uses a monitoring solution to see fi someone has registerred any of them, or they can pay the cost to register them under the buiness name, 
+Large organizations may choose to generate a list of similarly named domains, and either use a monitoring solution to see if someone has registered any of them, or they can pay the cost to register them under the business name, 
 
 # Homographs
-A homograph phishing attack is virtually impossible for users to spot. THis attack exploits the fact that many different characters look exactly alike. These characters are called homographs, and the problem is with how the characters are encoded using unicode. 
+A homograph phishing attack is virtually impossible for users to spot. This attack exploits the fact that many different characters look exactly alike. These characters are called homographs, and the problem is with how the characters are encoded using Unicode. 
 
-Similar looking characters such as Greek O, Latin O and Cyrillic O were not assigned the same code. So the latin o and the Cryill o have a different unicode and are therefore different letters. I also means domains with those different Os are different domains. 
+Similar-looking characters such as Greek O, Latin O, and Cyrillic O were not assigned the same code. So the Latin o and the Cryill o have different Unicode and are, therefore, different letters. I also mean domains with those different Os are different domains. 
 
 
 # Sender spoofing
-Is the process of making the sending address in an email look the same as a legitimate email to make the recipients believe it is coming from a genuine sender? This is typically used with credential harvesters where the attacker wants the recipient to believe the email has actually come from the impersonated company 
+Is the process of making the sending address in an email the same as a legitimate email to make the recipients believe it is coming from a genuine sender? This is typically used with credential harvesters where the attacker wants the recipient to believe the email has actually come from the impersonated company 
 
-The malicious actors sends an email with a "From:" address that appears to be from a source the recipient trusts, such as a well-known brand, work colleague, or family member. 
+The malicious actors send an email with a "From:" address that appears to be from a source the recipient trusts, such as a well-known brand, work colleague, or family member. 
 
 
 # HTML Styling
