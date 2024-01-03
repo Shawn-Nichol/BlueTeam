@@ -90,11 +90,36 @@ the step up from blocking the sending address is to block the entire sending dom
 This is a very serious block and is not conducted unless it is absolutely necessary. This will drop any emails coming from the specified IP.
 
 - Subject line
-Phishing attackers will typically use one subject line, otherwise, the attackers need to keep modifying it, creating more work. 
+Phishing attackers will typically use one subject line. Otherwise, the attackers need to keep modifying it, creating more work. 
+
+# Blocking Web artifacts
+**URL BLocks**
+URL blocks are extremely specific and will only block URLs that have been provided. 
+
+Sometimes, URLs are dynamically generated for specific recipients; therefore, a URL block  would only neutralize the threat for one recipient. 
+
+You can block URLs directly at the beginning to make the block more effective. 
+
+**Domain Blocks**
+Domain blocks work to prevent access to an entire domain. If you want to block google.com, it will prevent any web requests from going to Google. 
 
 
+## DNS BLackholing
+Blackholing is the process of creating a fake DNS entry so that if an employee tries to access a malicious site, they will be sent to another site. 
 
+## FIrewall
+Blocking an IP can be easily countered by changing the IP. 
 
+# Blocking file artifacts
+There are two standard types of blocks we can take when defending against malicious files. 
+- Hash Blocking
+- File name blocking
+
+**Hash blocking**
+Using EDR to block files based on their hash values can be countered by adding dummy data. 
+
+**Blocking Names**
+Typically, this is not a good idea unless the file has a unique name, as this could block legitimate files. 
 
 
 
