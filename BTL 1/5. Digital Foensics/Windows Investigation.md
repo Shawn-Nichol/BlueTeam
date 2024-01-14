@@ -20,5 +20,15 @@ C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Windows\Recent\CustomDestinations
 
 Analyze these files with "JumpList Explorer."
 
+# Winlogon Artifacts
+Event ID
+- 4624 (Successful logon)
+- 4672 (Special logon)
+- 4625 (Failed Logon)
+- 4634 (Logoff)
+
+Windows event logs are stored at the following location
+c:\Windows\System32\winevt\Logs
+
 
 
