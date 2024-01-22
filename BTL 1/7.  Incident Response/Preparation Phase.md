@@ -43,4 +43,14 @@ Returnbing business operation to normal by moving affected systems back to produ
 Once the investigation and response are complete, a meeting should be held that includes any stakeholder involved in the incident. The focus of this meeting should be to recap exactly what happened, specifically what went well and how could the respone have been improved. 
 
 
+# Emails
 
+SPF Sender Policy Framework
+A SPF is a type of DNS record that can help prevent an email address from being forged. This record is established to identiy the hostnames or IP addresses that are allowed to send emails for your custom domain. When having an SPF record specified on your domain, it helps prevent a malicous actor from spoofing your domain. The SPF txt recrod contains three parts: the eclaration of the record type, the IP addresses and external domains that can send on your domain's behalf and an enforcement rule. 
+
+
+Domain Keys Identified Mail
+DKIM is a method of email authentication that cryptographically verifies if an email has been sent by its trusted servers and hasn't been tampered with during transmission across the internet. The way that DKIM works is that when the mail server sends an encrypted hash of the email contents, it is generated using a private key, and then it adds this hash to the email header as a DKIM signature. The receiving server will be able to verify whether the email contents have not been tampered with by looking up the corresponding public key in the domain's DNS records once a new hash is verified whether the original and the newly generated hash match to ensure email message integrity. 
+
+Domain-based Message Authentication, Reporting & Conformance
+DMAC is an email authentication, policy, and reporting protocol. DMARC is built largely off of concepts taken from SPF and DKIM, but it adds several improvements to those protocols. This record type allows the domain owner to specify what should happen if emails fail both SPF and DKIM checks. There are three basic options that the mail server can take: none, quarantine, and reject. 
