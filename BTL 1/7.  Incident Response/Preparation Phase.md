@@ -46,7 +46,7 @@ Once the investigation and response are complete, a meeting should be held that 
 # Emails
 
 SPF Sender Policy Framework
-A SPF is a type of DNS record that can help prevent an email address from being forged. This record is established to identiy the hostnames or IP addresses that are allowed to send emails for your custom domain. When having an SPF record specified on your domain, it helps prevent a malicous actor from spoofing your domain. The SPF txt recrod contains three parts: the eclaration of the record type, the IP addresses and external domains that can send on your domain's behalf and an enforcement rule. 
+A SPF is a type of DNS record that can help prevent an email address from being forged. This record is established to identify the hostnames or IP addresses that are allowed to send emails to your custom domain. When having an SPF record specified on your domain helps prevent a malicious actor from spoofing your domain. The SPF text record contains three parts: the declaration of the record type, the IP addresses, and external domains that can be sent on your domain's behalf, and an enforcement rule. 
 
 
 Domain Keys Identified Mail
@@ -54,3 +54,5 @@ DKIM is a method of email authentication that cryptographically verifies if an e
 
 Domain-based Message Authentication, Reporting & Conformance
 DMAC is an email authentication, policy, and reporting protocol. DMARC is built largely off of concepts taken from SPF and DKIM, but it adds several improvements to those protocols. This record type allows the domain owner to specify what should happen if emails fail both SPF and DKIM checks. There are three basic options that the mail server can take: none, quarantine, and reject. 
+
+
