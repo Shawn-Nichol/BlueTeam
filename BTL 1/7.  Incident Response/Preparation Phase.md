@@ -55,4 +55,16 @@ DKIM is a method of email authentication that cryptographically verifies if an e
 Domain-based Message Authentication, Reporting & Conformance
 DMAC is an email authentication, policy, and reporting protocol. DMARC is built largely off of concepts taken from SPF and DKIM, but it adds several improvements to those protocols. This record type allows the domain owner to specify what should happen if emails fail both SPF and DKIM checks. There are three basic options that the mail server can take: none, quarantine, and reject. 
 
+# Deep blue
+is a PS script that was created  by SANS to aid with the investigation and triage of Windows event logs. This tool can be provided with exported evtx log files or can be run on a live system to analyze the local log files. 
 
+This tool can identify a range of attacks
+- User creation
+- User being added to groups
+- Password Guessing
+- Password spraying
+- Bloodhound Offensive tool usage
+- Obfuscated commands
+- PowerShell used to download remote files
+- Suspicious service creation
+- Mimikatz used to dump LSASS.exe for credential collection
