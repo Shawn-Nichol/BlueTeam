@@ -14,7 +14,7 @@ Destination
 ip.dst == x.x.x.x
 ```
 
-Menu Statistics endpoints will provide you with list of all the IP address and how many times it was hit. 
+Menu Statistics endpoints will list all the IP addresses and the size of communication data between points. 
 
 Subnet
 ```
@@ -26,17 +26,17 @@ Port filtering
 tcp.port == 80
 ```
 
-Multple Ports
+Multiple Ports
 ```
 tcp.port == 80, or tcp.port == 443, or tcp.port == 8000, or tcp.port == 8001, tcp.port == 8002, or tcp.port == 8003, or tcp.port == 80
 tcp.port in {80,443,8000..8005}
 ```
 
 # Statistics conversations
-Right click the conversation and you can set the filter. 
+Right-click the conversation, and you can set the filter. 
 
 
-you can combine protocols
+You can combine protocols.
 ```
 tcp and dns
 ```
@@ -46,11 +46,24 @@ Case senstive
 ```
 ip contains "London"
 ```
-Case insensitve 
+Case insensitive 
 ```
 ip matches "London"
 ```
 
 ```
 eth matches "London"
+```
+
+# Filter out the noise
+```
+!(arp or stp or lldp or tcp.port{443})
+```
+From here, you can export the PCAP to a new file for easier analysis. 
+
+
+# TCP Flags
+
+```
+TCP.analysis.flags
 ```
