@@ -10,6 +10,12 @@
 4672 - Special Logon, admin logs onto the system. 
 
 
+# Start Splunk
+open terminal
+- sudo systemctl start Splunkd
+Open Firefox
+- 127.0.0.1:8000
+
 # Splunk filters
 Searches the botsv1 database; earliest will start at the 0 entry. 
 ```
