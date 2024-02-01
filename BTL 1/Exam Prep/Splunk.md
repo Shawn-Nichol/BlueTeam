@@ -1,18 +1,19 @@
 # Win Event Logs
-4663 - high number of files being deleted
-4724 - Password Reset
-4704 & 4717 - Change Usesr rights assignments
-1102 - Security log cleared
-529 - failed logon
-624 - new user created
-4624 - User successfully logged on
-4625 - ASccount failed to log on
-4672 - Special Logon, admin logs onto the system. 
+- 4663 - high number of files being deleted
+- 4724 - Password Reset
+- 4704 & 4717 - Change Usesr rights assignments
+- 1102 - Security log cleared
+- 529 - failed logon
+- 624 - new user created
+- 4624 - User successfully logged on
+- 4625 - ASccount failed to log on
+- 4672 - Special Logon, admin logs onto the system. 
 
 
 # Start Splunk
 open terminal
 - sudo systemctl start Splunkd
+
 Open Firefox
 - 127.0.0.1:8000
 
@@ -55,13 +56,13 @@ search pass* AND fail*
 
 # Search commands
 Sort
-sor the events returned by the search, 
+sort the events returned by the search, 
 
 sort time by ascending
 ```
 | sort time asc
 ```
-Limit the return results
+Limit the return results.
 ```
 | sort limit=2 time asc
 ```
