@@ -40,6 +40,10 @@ You can combine protocols.
 ```
 tcp and dns
 ```
+# Filter Packet number
+```
+frame.number == 4612
+```
 
 # Strings
 Case senstive
@@ -67,3 +71,13 @@ From here, you can export the PCAP to a new file for easier analysis.
 ```
 TCP.analysis.flags
 ```
+
+# IDentify Network scans
+When there is a high number of ARP traffic, ask every IP in the subnet for their MAC address
+
+Statistics conversation, the TCP tab will show you all the conversation, a large number of packets and small packet size is also a good indication of port scanning
+
+# Export Objects
+File > Export > Objects > Select protocol
+
+This will display a list of files that can be exported
