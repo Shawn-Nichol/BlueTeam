@@ -4,17 +4,18 @@
 ipconfig /all
 ```
 
-Check running tasks
+Check running tasks and save the tasklist to a text file.
 ```
 tasklist
+tasklist > tasklist.txt
 ```
 
-Display running processes and the assciated binary file that was executed to crreate it
+Display running processes and the associated binary file that was executed to create it
 ```
 wmic process get description, executablepath
 ```
 
-Print a list of all system users to a terminal
+Print a list of all system users to a terminal.
 ```
 net user
 ```
@@ -53,24 +54,25 @@ Get specific details about a user
 Get-LocalUser -Name BTLO | select *
 ```
 
-IDnetify running services on the system. Out-GridView tells PS to show the results in a window. 
+Identify the running services on the system. Out-GridView tells PS to show the results in a window. 
 ```
 Get-Service | Where Status -eq "Running" | Out-GridView
 ```
 
-Group running processes by their priorty value.  This provides process name, the process ID (PID) and other infomration. 
+Group running processes by their priority value.  This provides the process name, the process ID (PID), and other information. 
 ```
 Get-Process | Format-Table -View priority
 ```
-We can collect specific information from a service by including the name in the command
+We can collect specific information from a service by including the name in the command.
 ```
 Get-Process -ID cmd | Select *
 ```
 
-Get a list of scheudled tasks 
+Get a list of scheduled tasks 
 ```
 Get-ScheduledTask
 Get-ScheduledTask -TaskName "TaskName" |  Select *
+Get-ScheduledTask | Where State -eq "Ready"
 ```
 
 
