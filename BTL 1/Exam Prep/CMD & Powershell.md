@@ -75,4 +75,15 @@ Get-ScheduledTask -TaskName "TaskName" |  Select *
 Get-ScheduledTask | Where State -eq "Ready"
 ```
 
+Hashes
+```
+// Diplays SHA256 by default
+get-filehash .\testfile.exe
 
+//MD5
+get-filehash -algorithm md5 .\testfile.exe
+
+//SHA1
+get-filehash -algorithm sha1 .\testfile.exe
+
+```
