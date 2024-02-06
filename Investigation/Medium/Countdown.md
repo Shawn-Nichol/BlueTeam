@@ -47,5 +47,17 @@ Extract the SQL database from the image. Using DB Browser, we can open the datab
 Note: Select Raw key, and start the key with 0x
 
 
-ZerryThe??
 
+Conversation, Browse table. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/6014d7be-a806-4258-894d-f0f0ec883e55)
+13026482364
+Profilename: ZerryThe🔥
+
+# Question 4
+table: Messages_FTS_content </br>
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/6c176ffa-9641-4a9e-9bdc-95b959c1a1bd)
+
+eekurk@baybabes.com
+
+# Question 5
+Use autopsy to try and locate the file
