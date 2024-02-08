@@ -44,14 +44,14 @@ Extract the SQL database from the image. Using DB Browser, we can open the datab
 
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/e3cf1a7a-2354-4270-bd48-7362389279b8)
 
-Note: Select Raw key, and start the key with 0x
+Note: Select the Raw key, and start the key with 0x
 
 
 
 Conversation, Browse table. 
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/6014d7be-a806-4258-894d-f0f0ec883e55)
 Phonenumber: 13026482364 </br>
-Profilename: ZerryThe🔥
+Profile name: ZerryThe🔥
 
 # Question 4
 table: Messages_FTS_content </br>
@@ -60,4 +60,30 @@ table: Messages_FTS_content </br>
 eekurk@baybabes.com
 
 # Question 5
-Use autopsy to try and locate the file
+Based on the Signal conversation, Zerry sent his email to Tom at Sunday, January 17, 2021 6:20:06.140 AM GMT, Zerry then confirmed the download on Sunday, January 17, 2021 6:25:16.179 AM GMT. 
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/0fe509c6-d3e9-4065-9399-4969372e0dd6)
+
+Email sent time
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/14db248f-b828-4299-9dc3-f9093478a7e0)
+
+Epoch Time: 1610864406140
+GMT Time: Sunday, January 17, 2021 6:20:06.140 AM
+
+Attachment confirmed time
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/f12926d9-58f5-4eb7-8b42-011b400364b7)
+
+Epoch Time: 1610864716179
+GMT Time: Sunday, January 17, 2021 6:25:16.179 AM
+Going back into Autopsy we can see that Zerry accessed the following file on Sunday,  January 17, at 6:24:39 AM. 
+ 
+File: ⏳📅.png </br>
+
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/022db508-3094-4483-b17b-62efa523f960)
+
+# Question 6 
+
+
+
+
