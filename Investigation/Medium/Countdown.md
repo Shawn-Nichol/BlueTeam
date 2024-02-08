@@ -60,7 +60,7 @@ table: Messages_FTS_content </br>
 eekurk@baybabes.com
 
 # Question 5
-Based on the Signal conversation, Zerry sent his email to Tom at Sunday, January 17, 2021 6:20:06.140 AM GMT, Zerry then confirmed the download on Sunday, January 17, 2021 6:25:16.179 AM GMT. 
+Based on the Signal conversation, Zerry sent his email to Tom on Sunday, January 17, 2021, 6:20:06.140 AM GMT; Zerry then confirmed the download on Sunday, January 17, 2021, 6:25:16.179 AM GMT. 
 
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/0fe509c6-d3e9-4065-9399-4969372e0dd6)
 
@@ -75,7 +75,7 @@ Attachment confirmed time
 
 Epoch Time: 1610864716179
 GMT Time: Sunday, January 17, 2021 6:25:16.179 AM
-Going back into Autopsy we can see that Zerry accessed the following file on Sunday,  January 17, at 6:24:39 AM. 
+Going back into Autopsy, we can see that Zerry accessed the following file on Sunday,  January 17, at 6:24:39 AM. 
  
 File: ⏳📅.png </br>
 
@@ -83,7 +83,41 @@ File: ⏳📅.png </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/022db508-3094-4483-b17b-62efa523f960)
 
 # Question 6 
+The hint tells you to look at Thumbcache_256.db in the /img_Zerry.E01/vol_vol3/ZerryD💣🔥/AppData/Local/Microsoft/Windows/Explorer/. 
 
+Export this file to the desktop top and use Thumbcache Viewer to open the db. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/82dd0d60-4f28-4768-acd3-0a467a8bce85)
 
+Looking at the DB, we can see only two files that aren't 0 KB. 
 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/330cb757-00e3-41f1-8de7-1f3bccb91297)
+
+View the thumbnail for both images. We can see one has a date and clock on it, giving us the time of the attack. 
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/fbaabf9b-11c2-4550-bab8-b6ad0d097ca2)
+
+Time: 1-02-2021 9:00 AM 
+
+# Question 7
+The Signal conversation says they discussed the location at their annual meeting in 2020. 
+EPOC TIME: 1610907262384
+
+The following TOR database provides browser information such as bookmarks. That could be used to identify an encryption/decryption method. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/d7ed92c9-6604-4738-85a0-9225fa6a82bd)
+
+Export the places.SQLite database to the desktop so it can be viewed in DB Browser. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/ad3eb4da-5f68-4acb-a0cf-461ee8cb0569)
+
+To get the coordinates, export the Microsoft StickeyNotes folder
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/b37b65bd-d341-4f39-95f6-b0e17053f714)
+
+Open the folder in DB Browser. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/34ed3211-0758-4201-9d91-a8f03397bb79)
+
+Check the Notes table and select the first column. This data now needs to be decoded in cyberchef with Rot13. 
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/b5aeabc4-a528-438e-8f4e-32bda20e5187)
+
+![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/0c6f1bee-b873-4ca4-bf5f-7e6085b3e136)
+
+40 degrees 45 minutes 28.6776 seconds N, 73 degrees 59 minutes 7.944 seconds W
 
