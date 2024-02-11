@@ -1,8 +1,28 @@
-# Question 1 - 4
-Can easily be identified by analysising the raw data of the email. 
+# Question 1
+Submit the subject line of the phishing email?
+
+Open the email, and CRTL+F for the subject
+
+Answer: Salary Renegotiations
+
+# Question 2
+Submit the FROM and TO addresses of the phishing email?
+Still in the eml file. 
+
+From: HR_Engineer@faang.com
+To: Ben_Engineer@faang.com
+
+
+# Question 3
+Submit the download link observed in the email attachment.
+
+
+# Question 4
+Submit the extension of the file that will be downloaded when the malicious link is clicked?
+.pdf
 
 # Question 5
-Unzip the attachment the file is disguised as a PDF; if you show the extension, you'll notice the file is actually exe. </br>
+Unzip the attachment, the file is disguised as a PDF; if you show the extension, you'll notice the file is actually exe. </br>
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/98f2cef3-de0c-40cc-8118-2eb5f4f02264)
 
 Load the PDF file into CyberChef, and start skimming the content until you find "W.a.i.t.F.o.r.E.x.i.t." the mutex will be in curly brackets after this.
