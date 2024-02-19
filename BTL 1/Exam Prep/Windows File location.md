@@ -26,7 +26,7 @@ Jump list location
 - C:\Users\% USERNAME%\AppData\ Roaming\Microsoft\Windows\Recent\AutomaticDestinations
 - C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Windows\Recent\CustomDestinations
 
-
-
+Human readable program JumpList
+https://ericzimmerman.github.io/#!index.md
 
 
