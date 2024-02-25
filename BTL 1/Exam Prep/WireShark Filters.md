@@ -49,15 +49,16 @@ frame.number == 4612
 Case senstive
 ```
 ip contains "London"
+http contains "London"
 ```
 Case insensitive 
 ```
 ip matches "London"
-```
-
-```
+http matches "London"
 eth matches "London"
 ```
+
+
 
 # Filter out the noise
 ```
