@@ -29,6 +29,9 @@ sudo chown ubuntu myscalpel.conf
 
 # Edit the file
 Open the copy config file and remove the # for file types you want to search
+```
+nano myscalpel.conf
+```
 ![image](https://github.com/Shawn-Nichol/BlueTeam/assets/30714313/5d4af420-620a-4ea5-a722-14fa55b13b7a)
 
 Make a directory to save the results to
@@ -39,5 +42,5 @@ mkdir output
 
 # Run scalpel
 ```
-scalpel -c myscaplel.conf fileOfInterest.img -o outout
+scalpel -c myscaplel.conf fileOfInterest.img -o output
 ```
