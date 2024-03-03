@@ -11,6 +11,11 @@ Searches the botsv1 database; earliest will start at the 0 entry.
 index="botsv1" earliest=0
 ```
 
+Alternatively you can use a wildcard to search all indexes
+```
+index=*
+```
+
 # Fields
 Selected fields 
 - Are the most important
