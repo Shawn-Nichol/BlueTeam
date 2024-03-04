@@ -85,3 +85,10 @@ de-duplicate results
 ```
 | table action | dedup action
 ```
+
+
+# creating a pie chart
+```
+index=* sourcetype="suricata" event_type=alert | stats count by severity
+```
+Select Visulization
